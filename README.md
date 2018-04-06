@@ -9,13 +9,12 @@ Run the app in simulator/ device and tap download to start the download the file
 
 Change the input parameters/ url for the file to download.
 
-
 ````objective-c
-[self.networkManager fetchDataWithURL:@"your url here"
-toDirectory: @"output directory"
-chunkSize: 1049000
-chunks: 4
-onCompletion:^(NSError *error) {
+    [self.networkManager fetchDataWithURL:@"your url here"
+                              toDirectory: @"output directory"
+                                chunkSize: 1049000
+                                   chunks: 4
+                             onCompletion:^(NSError *error) {
 
-}];
+    }];
 ````
